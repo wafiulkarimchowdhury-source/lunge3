@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "leftclicklunge",
+	"version": "${version}",
+	"name": "Left Click Lunge",
+	"description": "Hold or tap left click to chain spear Lunge swaps in a single tick. Only fires when no player or mob is within 4 blocks. Toggle key in Controls.",
+	"authors": [
+		"You"
+	],
+	"license": "MIT",
+	"icon": "assets/leftclicklunge/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.leftclicklunge.client.LeftClickLungeClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "leftclicklunge.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
